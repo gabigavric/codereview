@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+ <head>
+   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+   <link href="css/styles.css" rel="stylesheet" type="text/css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="js/scripts.js"></script>
+   <title>Code Review</title>
+ </head>
+
+ <body>
+   <div class="container">
+     <div class="jumbotron">
+       <h1>Vacation Suggester</h1>
+       <p>Are you ready for a break but don't know where to go? You have
+          to the right place! Just answer the questions below and we will do our best
+          to suggest places matched for you!
+       </p>
+     </div>
+
+     <p>First, tell us what you would like us to call you</p>
+     <div class="form-group">
+       <label for="inputName" class="col-sm-2 control-label">Name</label>
+       <div class="col-sm-10">
+         <input type="name" class="form-control" id="inputName" placeholder="Name">
+       </div>
+    </div>
+
+     <select class="form-control" id="temperature">
+       <option>Hot</option>
+       <option>Mild</option>
+       <option>Cold</option>
+     </select>
+
+     <select class="form-control" id="preference">
+       <option>Beach</option>
+       <option>Mountain</option>
+       <option>Forest</option>
+       <option>Dessert</option>
+       <option>City</option>
+     </select>
+
+   </div>
+ </body>
+</html>
