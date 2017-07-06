@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  $("input").change(function() {
+  $("form").submit(function(event) {
 
     var gender = $('input:radio[name=gender]:checked').val();
     var color = $('input:radio[name=color]:checked').val();
@@ -30,7 +30,7 @@ $(document).ready(function() {
       $("#outputName").text("You are " + name);
     }
 
-
+    event.preventDefault();
 
   });
 });
